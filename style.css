@@ -141,60 +141,65 @@ ul {
 .carousel-caption {
   top: 30%;
 }
+
 .carousel-caption h1 {
-    font-family: "Sedan SC", serif;
+  font-family: "Sedan SC", serif;
   font-weight: bold;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   color: #FFFFFF;
 }
+
 @media only screen and (max-width: 991px) {
   .carousel-caption h1 {
-      font-size: 58px;
+    font-size: 35px;
   }
 }
-@media only screen and (min-width: 991px) {
-  .carousel-caption h1 {
-      font-size: 100px;
-  }
-}
+
 .carousel-caption h4 {
   color: #f2f2f2;
-  font-family: 'Prompt', sans-serif;
   font-weight: bold;
 }
+
 .carousel-caption h5 {
   color: #f2f2f2;
-  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
+
 .c-item {
   height: 800px;
 }
+
 .c-img {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.6);
 }
+
 .carousel-item {
-  height: 800px;
+  height: 70vh;
 }
+
 .carousel-item.active img {
   transition: transform 5s linear;
   transition-duration: infinite;
   transform: scale(1.05, 1.05);
   height: 100%;
 }
+
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C4B583'  viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
+
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C4B583' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
+
 html body main section.rooms div.container div.row div.col-lg-12 div.room-content.h-100 div.room-info div.room-amenities p i.fas {
   font-size: 30px;
 }
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   display: inline-block;
@@ -204,15 +209,18 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
   background-position: 50% center;
   background-size: 100% 100%;
 }
+
 .carousel-control-next,
 .carousel-control-prev {
   width: 10%;
 }
+
 @media only screen and (max-width: 600px) {
   .carousel-caption {
-      text-align: center;
+    text-align: center;
   }
 }
+
 /* INDEX - ABOUT US*/
 .about_area h6 {
   color: #737a83;
@@ -220,6 +228,7 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
   font-weight: 600;
   letter-spacing: 0.1em;
 }
+
 .about_area .tagline::before {
   content: "";
   display: block;
@@ -228,19 +237,22 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
   background-color: #C4B583;
   margin-bottom: 17px;
 }
+
 .about_area h2 {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: bold;
 }
+
 .about_area p {
-  font-family: 'Prompt', sans-serif;
   color: #8c8c8c;
 }
+
 @media only screen and (min-width: 1000px) {
   #tagline {
-      margin: auto;
+    margin: auto;
   }
 }
+
 /* INDEX - ROOMS*/
 .section-amenities {
   position: relative;
@@ -461,12 +473,15 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
   text-align: center;
   transition: 0.5s ease-in;
+  border-bottom-right-radius: 30%;
+  border-top-left-radius: 30%;
 }
 
 .box i {
   font-size: 3rem;
-  color: var(--header);
+  color: black;
   margin-bottom: 15px;
+  
 }
 
 .box h6 {
@@ -482,7 +497,11 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
   margin-bottom: 20px;
 }
 
-.box:hover i,
+.box:hover i {
+  color: #ff9900;
+  transition: 0.75s ease;
+}
+
 .box:hover h6,
 .box:hover p {
   color: black;
@@ -723,30 +742,33 @@ html body main section.rooms div.container div.row div.col-lg-12 div.room-conten
 
 .contact-section {
   background: url('assets/image/') no-repeat center center fixed;
-  display: flex;
-  justify-content: center;
-  padding: 50px 0;
   background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px 0;
 }
 
 .contact-card {
   background: white;
-  margin: 10px;
+  margin: 10px 0;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   text-align: center;
-  width: 30%;
 }
 
 .icon {
   background: #ff9900;
   color: white;
   border-radius: 50%;
-  padding: 20px;
+  padding: 10px;
   font-size: 25px;
-  margin-bottom: 20px;
   display: inline-block;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 45%;
 }
 
 .contact-card h3 {
@@ -1005,6 +1027,28 @@ ul.link-menu li.active a {
   ul.contact li,
   ul.link-menu li a {
     text-align: center;
+  }
+
+  .box,.contact-card {
+    margin: 15px;
+  }
+
+  .quotation img {
+    width: 50px;
+  }
+
+  .amenities-contain,
+  #tagline {
+    text-align: center;
+  }
+
+  .about_area .tagline::before {
+    width: unset;
+  }
+
+  ul.contact li,
+  ul.link-menu li {
+    font-size: 15px;
   }
 
   #btn-back-to-top {
